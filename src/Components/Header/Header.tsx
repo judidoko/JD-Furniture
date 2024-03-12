@@ -16,7 +16,7 @@ const Header = ({ ...props }: Props) => {
           <Text
             size="xl"
             as="p"
-            className="!text-black-900 tracking-[-0.50px] text-[#844d36] p-2"
+            className="tracking-[-0.50px] text-[#844d36] font-extrabold p-2"
           >
             JD Furnitures
           </Text>
