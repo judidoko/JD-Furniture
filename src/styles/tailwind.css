@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav {
+    @apply tracking-[-0.50px] relative hover:text-gray-700;
+  }
+  .nav::after {
+    @apply content-[""] bg-[#844d36] animate-ping h-[4px] w-[0px] left-0 -bottom-[0px] rounded-xl absolute;
+  }
+  .nav:hover::after {
+    @apply w-[100%];
+  }
+}
+
 [type="text"],
 input:where(:not([type])),
 [type="email"],
